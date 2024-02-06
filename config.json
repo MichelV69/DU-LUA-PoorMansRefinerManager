@@ -156,7 +156,7 @@
       "key": "3"
     },
     {
-      "code": "switch_product()",
+      "code": "IndustryIndex = IndustryIndex +1\nif IndustryIndex > #IndustryList then IndustryIndex = 1 end\nswitch_product(IndustryList[IndustryIndex])\n",
       "filter": {
         "args": [
           {
@@ -169,7 +169,7 @@
       "key": "4"
     },
     {
-      "code": "--- ### unit.onstart(1) --- \ndesiredOreLoadInStock = 222 --export: Maintain how much of each?\ncycleTimeSeconds = 11       --export: Check connected industry how often?\nversion = \"1.1.0\"\nrev_date = \"05Feb2024\"\n\nfunction switch_product(industryID)\n    -- first, turn the running timer off\n    unit.stopTimer(\"CheckStatus\")\n\n    local currentItem = industryID.getOutputs()\n\n    -- linked list to cycle possible recipes\n    local cylcleList = {}\n\n    cylcleList[OreList.T1.aluminum]\t= OreList.T1.carbon;\n    cylcleList[OreList.T1.carbon] \t= OreList.T1.iron;\n    cylcleList[OreList.T1.iron] \t= OreList.T1.silicon;\n    cylcleList[OreList.T1.silicon] \t= OreList.T2.chromium;\n\t\n\t\n\tcylcleList[OreList.T2.chromium]\t= OreList.T2.calcium;\n    cylcleList[OreList.T2.calcium]\t= OreList.T2.copper;\t\n    cylcleList[OreList.T2.copper]\t= OreList.T2.natron;\n    cylcleList[OreList.T2.natron]\t= OreList.T1.aluminum;\t\n\n    if not cylcleList[currentItem[1].id] then\n        -- if the refiner was doing a batch of something else, fall back to T1\n        currentItem = OreList.T1.aluminum\n        end\n\n    -- handle the refiner\n    industryID.stop(true)\n    industryID.setOutput(cylcleList[currentItem[1].id])\n    industryID.startMaintain(desiredOreLoadInStock) \n\n    end\n\t\n--- ### main code\n\nIndustryList = {}\nfor i = 1, 9, 1 do\n  if SlotList[i] and SlotList[i].getState() ~= nil then\n    table.insert(LightsList, SlotList[i])\n    SlotList[i].stop(true)\n  end\nend\n\nunit.setTimer(\"CheckStatus\",21)\n\n\t\n--- EOF unit.onstart(1) --- ",
+      "code": "--- ### unit.onstart(1) --- \ndesiredOreLoadInStock = 222 --export: Maintain how much of each?\ncycleTimeSeconds = 11       --export: Check connected industry how often?\nversion = \"1.1.1\"\nrev_date = \"05Feb2024\"\n\nfunction switch_product(industryID)\n    local currentItem = industryID.getOutputs()\n\n    -- linked list to cycle possible recipes\n    local cycleList = {}\n\n    cycleList[OreList.T1.aluminum]\t= OreList.T1.carbon;\n    cycleList[OreList.T1.carbon] \t= OreList.T1.iron;\n    cycleList[OreList.T1.iron] \t= OreList.T1.silicon;\n    cycleList[OreList.T1.silicon] \t= OreList.T2.chromium;\n\t\t\t\t\t\t\t\t\n    cycleList[OreList.T2.chromium]\t= OreList.T2.calcium;\n    cycleList[OreList.T2.calcium]\t= OreList.T2.copper;\t\n    cycleList[OreList.T2.copper]\t= OreList.T2.natron;\n    cycleList[OreList.T2.sodium]\t= OreList.T1.aluminum;\t\n\n    if not cycleList[currentItem[1].id] then\n        -- if the refiner was doing a batch of something else, fall back to T1\n        currentItem[1].id = OreList.T1.aluminum\n        end\n\n    -- handle the refiner\n    industryID.stop(true)\n    industryID.setOutput(cycleList[currentItem[1].id])\n    industryID.startMaintain(desiredOreLoadInStock) \n\n    end\n\t\n--- ### main code\n\nIndustryList = {}\nfor i = 1, 9, 1 do\n  if SlotList[i] and SlotList[i].getState() ~= nil then\n    table.insert(IndustryList, SlotList[i])\n    SlotList[i].stop(true)\n  end\nend\n\nunit.setTimer(\"CheckStatus\",3)\n\t\n--- EOF unit.onstart(1) --- ",
       "filter": {
         "args": [],
         "signature": "onStart()",
@@ -178,13 +178,13 @@
       "key": "5"
     },
     {
-      "code": "--- ### library.onstart(1) --- \n\nSlotList = {slot1, slot2, slot3, slot4, slot5, slot6, slot7, slot8, slot9, slot10}\n\nOreList = {}\nOreList.T1 = {}\nOreList.T1.iron \t=  198782496\nOreList.T1.aluminum =  2240749601\nOreList.T1.carbon \t=  159858782\nOreList.T1.silicon \t=  2589986891\n\n\nOreList.T2 = {}\nOreList.T2.chromium =  2029139010\nOreList.T2.copper\t=  1466453887\nOreList.T2.natron \t=  3603734543\nOreList.T2.calcium \t=  2112763718\n\n\nIndustryStatus = {}\nIndustryStatus.jammed\t= 3\nIndustryStatus.pending\t= 6\n--- EOF library.onstart(1) --- ",
+      "code": "--- ### library.onstart(1) --- \n\nSlotList = {slot1, slot2, slot3, slot4, slot5, slot6, slot7, slot8, slot9, slot10}\n\nIndustryIndex = 0\n\nOreList = {}\nOreList.T1 = {}\nOreList.T1.iron \t=  198782496\nOreList.T1.aluminum =  2240749601\nOreList.T1.carbon \t=  159858782\nOreList.T1.silicon \t=  2589986891\n\nOreList.T2 = {}\nOreList.T2.chromium =  2147954574\nOreList.T2.copper\t=  1466453887\nOreList.T2.sodium \t=  3603734543\nOreList.T2.calcium \t=  2112763718\n\nIndustryStatus = {}\nIndustryStatus.jammed\t= 3\nIndustryStatus.pending\t= 6\n--- EOF library.onstart(1) --- ",
       "filter": {
         "args": [],
         "signature": "onStart()",
         "slotKey": "-5"
       },
-      "key": 7
+      "key": "6"
     }
   ],
   "methods": [],

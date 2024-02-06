@@ -1,3 +1,4 @@
---- ### unit.onTimer(CheckStatus) ---
-switch_product()
---- EOF unit.onTimer(CheckStatus) ---
+IndustryIndex = IndustryIndex +1
+if IndustryIndex > #IndustryList then IndustryIndex = 1 end
+switch_product(IndustryList[IndustryIndex])
+
