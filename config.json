@@ -1,1 +1,192 @@
-{"slots":{"0":{"name":"refiner","type":{"events":[],"methods":[]}},"1":{"name":"slot2","type":{"events":[],"methods":[]}},"2":{"name":"slot3","type":{"events":[],"methods":[]}},"3":{"name":"slot4","type":{"events":[],"methods":[]}},"4":{"name":"slot5","type":{"events":[],"methods":[]}},"5":{"name":"slot6","type":{"events":[],"methods":[]}},"6":{"name":"slot7","type":{"events":[],"methods":[]}},"7":{"name":"slot8","type":{"events":[],"methods":[]}},"8":{"name":"slot9","type":{"events":[],"methods":[]}},"9":{"name":"slot10","type":{"events":[],"methods":[]}},"-1":{"name":"unit","type":{"events":[],"methods":[]}},"-3":{"name":"player","type":{"events":[],"methods":[]}},"-2":{"name":"construct","type":{"events":[],"methods":[]}},"-4":{"name":"system","type":{"events":[],"methods":[]}},"-5":{"name":"library","type":{"events":[],"methods":[]}}},"handlers":[{"code":"unit.setTimer(\"CheckStatus\",21)","filter":{"args":[{"value":"6"}],"signature":"onStatusChanged(status)","slotKey":"0"},"key":"0"},{"code":"unit.setTimer(\"CheckStatus\",21)","filter":{"args":[{"value":"3"}],"signature":"onStatusChanged(status)","slotKey":"0"},"key":"1"},{"code":"unit.setTimer(\"CheckStatus\",21)","filter":{"args":[{"value":"1"}],"signature":"onStatusChanged(status)","slotKey":"0"},"key":"2"},{"code":"unit.setTimer(\"CheckStatus\",21)","filter":{"args":[],"signature":"onBankUpdate()","slotKey":"0"},"key":"3"},{"code":"switch_product()","filter":{"args":[{"value":"CheckStatus"}],"signature":"onTimer(tag)","slotKey":"-1"},"key":"4"},{"code":"desiredOreLoadInStock = 222 --export: Maintain how much of each?\nversion = \"1.0.3\"\nrev_date = \"13Nov2022\"\n\nfunction switch_product()\n    -- first, turn the running timer off\n    unit.stopTimer(\"CheckStatus\")\n    \n    --- NB - status condtions\n    -- status 3 -> jammed, no materials\n    -- status 6 -> pending, probably maintain is satisfied\n\n    --- T1 Ore List\n    -- 198782496, -- hematite -> iron\n    -- 2240749601, -- bauxite -> aluminum\n    -- 159858782, -- coal -> carbon\n    -- 2589986891, -- qurtz -> silicon\n\n    local currentItem = refiner.getOutputs()\n\n    -- linked list to cycle possible recipes\n    local refinedOres = {}\n\n    refinedOres[198782496] = 2240749601;\n    refinedOres[2240749601] = 159858782;\n    refinedOres[159858782] = 2589986891;\n    refinedOres[2589986891] = 198782496;\n\n    if not refinedOres[currentItem[1].id] then\n        -- if the refiner was doing a batch of T2 originally, fall back to T1\n        currentItem = 198782496\n        end\n\n    -- handle the refiner\n    refiner.stop(true)\n    refiner.setOutput(refinedOres[currentItem[1].id])\n    refiner.startMaintain(desiredOreLoadInStock) \n\n    end","filter":{"args":[],"signature":"onStart()","slotKey":"-1"},"key":"5"}],"methods":[],"events":[]}
+{
+  "slots": {
+    "0": {
+      "name": "slot1",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "1": {
+      "name": "slot2",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "2": {
+      "name": "slot3",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "3": {
+      "name": "slot4",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "4": {
+      "name": "slot5",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "5": {
+      "name": "slot6",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "6": {
+      "name": "slot7",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "7": {
+      "name": "slot8",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "8": {
+      "name": "slot9",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "9": {
+      "name": "slot10",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "-1": {
+      "name": "unit",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "-3": {
+      "name": "player",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "-2": {
+      "name": "construct",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "-4": {
+      "name": "system",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "-5": {
+      "name": "library",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    }
+  },
+  "handlers": [
+    {
+      "code": "unit.setTimer(\"CheckStatus\",21)",
+      "filter": {
+        "args": [
+          {
+            "value": "6"
+          }
+        ],
+        "signature": "onStatusChanged(status)",
+        "slotKey": "0"
+      },
+      "key": "0"
+    },
+    {
+      "code": "unit.setTimer(\"CheckStatus\",21)",
+      "filter": {
+        "args": [
+          {
+            "value": "3"
+          }
+        ],
+        "signature": "onStatusChanged(status)",
+        "slotKey": "0"
+      },
+      "key": "1"
+    },
+    {
+      "code": "unit.setTimer(\"CheckStatus\",21)",
+      "filter": {
+        "args": [
+          {
+            "value": "1"
+          }
+        ],
+        "signature": "onStatusChanged(status)",
+        "slotKey": "0"
+      },
+      "key": "2"
+    },
+    {
+      "code": "unit.setTimer(\"CheckStatus\",21)",
+      "filter": {
+        "args": [],
+        "signature": "onBankUpdate()",
+        "slotKey": "0"
+      },
+      "key": "3"
+    },
+    {
+      "code": "unit.stopTimer(\"CheckStatus\")\n\nfor IndustryIndex = 1,#IndustryList do \n    switch_product(IndustryList[IndustryIndex])\n    end\n\nunit.setTimer(\"CheckStatus\", cycleTimeSeconds)\n--- ### unit.OnTimer(1) EOF ### --- ",
+      "filter": {
+        "args": [
+          {
+            "value": "CheckStatus"
+          }
+        ],
+        "signature": "onTimer(tag)",
+        "slotKey": "-1"
+      },
+      "key": "4"
+    },
+    {
+      "code": "--- ### unit.onstart(1) --- \ndesiredOreLoadInStock = 444 --export: Maintain how much of each?\ncycleTimeSeconds = 21 --export: Check connected industry how often?\nforceBottomStart = true --export: when first booting, force all machines to start with OreList.T1.aluminum\n\nversion = \"1.1.4\"\nrev_date = \"12Feb2024\"\n\nfunction switch_product(industryID)\n    local stopImmediate = false\n    local stopDestructive = false\n    industryID.stop(stopImmediate, stopDestructive)\n    local currentItem = industryID.getOutputs()\n  \n    -- linked list to cycle possible recipes\n    local cycleList = {}\n\n    cycleList[OreList.T1.oxygen]\t= OreList.T1.aluminum;\n    cycleList[OreList.T1.aluminum]\t= OreList.T1.carbon;\n    cycleList[OreList.T1.carbon] \t= OreList.T1.iron;\n    cycleList[OreList.T1.iron] \t    = OreList.T1.silicon;\n    cycleList[OreList.T1.silicon] \t= OreList.T1.hydrogen;\n    cycleList[OreList.T1.hydrogen] \t= OreList.T2.chromium;\n\t\t\t\t\t\t\t\t\n    cycleList[OreList.T2.chromium]\t= OreList.T2.calcium;\n    cycleList[OreList.T2.calcium]\t= OreList.T2.copper;\t\n    cycleList[OreList.T2.copper]\t= OreList.T2.sodium;\n    cycleList[OreList.T2.sodium]\t= OreList.Default;\t\n\n    if currentItem == nil then\n        currentItem = {}\n        currentItem[1] = {}\n        end\n    \n    if not cycleList[currentItem[1].id] then\n        -- if the refiner was doing a batch of something else, fall back to T1\n        currentItem[1].id = OreList.Default\n        end\n\n    if forceBottomStart then\n        forceBottomStart = false\n        currentItem[1].id = OreList.Default\n        end    \n    \n    -- handle the refiner\n    industryID.setOutput(cycleList[currentItem[1].id])\n    industryID.startMaintain(desiredOreLoadInStock) \n\n    end\n\n\n--- ### main code\n\nIndustryList = {}\nfor i = 1, 9, 1 do\n  if SlotList[i] and SlotList[i].getState() ~= nil then\n    table.insert(IndustryList, SlotList[i])\n    SlotList[i].stop(true)\n  end\nend\n\nunit.setTimer(\"CheckStatus\", 1)\t\n--- EOF unit.onstart(1) --- ",
+      "filter": {
+        "args": [],
+        "signature": "onStart()",
+        "slotKey": "-1"
+      },
+      "key": "5"
+    },
+    {
+      "code": "--- ### library.onstart(1) --- \n\nSlotList = {slot1, slot2, slot3, slot4, slot5, slot6, slot7, slot8, slot9, slot10}\n\nOreList = {}\nOreList.T1 = {}\nOreList.T1.hydrogen  =  1010524904\nOreList.T1.oxygen    =  947806142\nOreList.T1.iron \t=  198782496\nOreList.T1.aluminum  =  2240749601\nOreList.T1.carbon \t=  159858782\nOreList.T1.silicon \t=  2589986891\n\n\nOreList.T2 = {}\nOreList.T2.chromium =  2147954574\nOreList.T2.copper\t=  1466453887\nOreList.T2.sodium \t=  3603734543\nOreList.T2.calcium \t=  2112763718\n\nOreList.Default = OreList.T1.oxygen\n\nIndustryStatus = {}\nIndustryStatus.jammed\t= 3\nIndustryStatus.pending\t= 6\n--- EOF library.onstart(1) --- ",
+      "filter": {
+        "args": [],
+        "signature": "onStart()",
+        "slotKey": "-5"
+      },
+      "key": "6"
+    }
+  ],
+  "methods": [],
+  "events": []
+}
