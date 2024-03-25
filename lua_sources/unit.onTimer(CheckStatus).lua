@@ -1,8 +1,8 @@
 unit.stopTimer("CheckStatus")
 
-for IndustryIndex = 1,#IndustryList do 
+for IndustryIndex = 1, #IndustryList do
     switch_product(IndustryList[IndustryIndex])
-    end
+end
 
 unit.setTimer("CheckStatus", cycleTimeSeconds)
---- ### unit.OnTimer(1) EOF ### --- 
+--- ### unit.OnTimer(1) EOF ### ---
