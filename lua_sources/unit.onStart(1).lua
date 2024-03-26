@@ -1,10 +1,10 @@
 --- ### unit.onstart(1) ---
-desiredOreLoadInStock = 777 --export: Maintain how much of each?
+desiredOreLoadInStock = 1111 --export: Maintain how much of each?
 cycleTimeSeconds = 3.33     --export: Check connected industry how often?
 forceBottomStart = true     --export: when first booting, force all machines to start with OreList.T1.aluminum
 
-version = "1.2.3"
-rev_date = "24March2024"
+version = "1.2.6"
+rev_date = "26March2024"
 
 function switch_product(industryID)
     if industryID.getState() == IndustryStatus.running then
@@ -29,8 +29,10 @@ function switch_product(industryID)
     cycleList[OreList.T2.calcium.ore]   = OreList.T2.copper.ore;
     cycleList[OreList.T2.copper.ore]    = OreList.T2.sodium.ore;
     cycleList[OreList.T2.sodium.ore]    = OreList.T3.sulfur.ore;
-
-    cycleList[OreList.T3.sulfur.ore]    = OreList.Default;
+    
+    cycleList[OreList.T3.sulfur.ore]    = OreList.T3.lithium.ore;
+    
+    cycleList[OreList.T3.lithium.ore]    = OreList.Default;
 
     if currentItem == nil then
         currentItem = {}
@@ -61,9 +63,12 @@ IndustryList = {}
 for i = 1, 9, 1 do
     if SlotList[i] and SlotList[i].getState() ~= nil then
         table.insert(IndustryList, SlotList[i])
-        SlotList[i].stop(true)
+        if forceBottomStart then 
+            SlotList[i].stop(true)
+            end
     end
 end
 
 unit.setTimer("CheckStatus", 1)
 --- EOF unit.onstart(1) ---
+

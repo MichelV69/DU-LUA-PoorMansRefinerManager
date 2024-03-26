@@ -9,4 +9,6 @@ You can set the amount of material to be maintained via `[Right Click] -> Advanc
 
 Parameters Available Are:
 
-  * Desired Ore Load In Stock (default: 222)
+  * Desired Ore Load In Stock (default: 1111)
+  * Cycle Time In Seconds (default: 3.33)
+  * Force Bottom Start (default: Yes)
