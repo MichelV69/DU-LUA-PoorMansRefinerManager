@@ -1,10 +1,10 @@
 --- ### unit.onstart(1) --- 
-desiredOreLoadInStock = 444 --export: Maintain how much of each?
-cycleTimeSeconds = 21 --export: Check connected industry how often?
+desiredOreLoadInStock = 222 --export: Maintain how much of each?
+cycleTimeSeconds = 6 --export: Check connected industry how often?
 forceBottomStart = true --export: when first booting, force all machines to start with OreList.T1.aluminum
 
-version = "1.1.4"
-rev_date = "12Feb2024"
+version = "1.1.5"
+rev_date = "10Aug2025"
 
 function switch_product(industryID)
     local stopImmediate = false
@@ -15,12 +15,10 @@ function switch_product(industryID)
     -- linked list to cycle possible recipes
     local cycleList = {}
 
-    cycleList[OreList.T1.oxygen]	= OreList.T1.aluminum;
     cycleList[OreList.T1.aluminum]	= OreList.T1.carbon;
     cycleList[OreList.T1.carbon] 	= OreList.T1.iron;
     cycleList[OreList.T1.iron] 	    = OreList.T1.silicon;
-    cycleList[OreList.T1.silicon] 	= OreList.T1.hydrogen;
-    cycleList[OreList.T1.hydrogen] 	= OreList.T2.chromium;
+    cycleList[OreList.T1.silicon] 	= OreList.T2.chromium; 
 								
     cycleList[OreList.T2.chromium]	= OreList.T2.calcium;
     cycleList[OreList.T2.calcium]	= OreList.T2.copper;	
