@@ -70,6 +70,636 @@
         "methods": []
       }
     },
+    "10": {
+      "name": "slot11",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "11": {
+      "name": "slot12",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "12": {
+      "name": "slot13",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "13": {
+      "name": "slot14",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "14": {
+      "name": "slot15",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "15": {
+      "name": "slot16",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "16": {
+      "name": "slot17",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "17": {
+      "name": "slot18",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "18": {
+      "name": "slot19",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "19": {
+      "name": "slot20",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "20": {
+      "name": "slot21",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "21": {
+      "name": "slot22",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "22": {
+      "name": "slot23",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "23": {
+      "name": "slot24",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "24": {
+      "name": "slot25",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "25": {
+      "name": "slot26",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "26": {
+      "name": "slot27",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "27": {
+      "name": "slot28",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "28": {
+      "name": "slot29",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "29": {
+      "name": "slot30",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "30": {
+      "name": "slot31",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "31": {
+      "name": "slot32",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "32": {
+      "name": "slot33",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "33": {
+      "name": "slot34",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "34": {
+      "name": "slot35",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "35": {
+      "name": "slot36",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "36": {
+      "name": "slot37",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "37": {
+      "name": "slot38",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "38": {
+      "name": "slot39",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "39": {
+      "name": "slot40",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "40": {
+      "name": "slot41",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "41": {
+      "name": "slot42",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "42": {
+      "name": "slot43",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "43": {
+      "name": "slot44",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "44": {
+      "name": "slot45",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "45": {
+      "name": "slot46",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "46": {
+      "name": "slot47",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "47": {
+      "name": "slot48",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "48": {
+      "name": "slot49",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "49": {
+      "name": "slot50",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "50": {
+      "name": "slot51",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "51": {
+      "name": "slot52",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "52": {
+      "name": "slot53",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "53": {
+      "name": "slot54",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "54": {
+      "name": "slot55",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "55": {
+      "name": "slot56",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "56": {
+      "name": "slot57",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "57": {
+      "name": "slot58",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "58": {
+      "name": "slot59",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "59": {
+      "name": "slot60",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "60": {
+      "name": "slot61",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "61": {
+      "name": "slot62",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "62": {
+      "name": "slot63",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "63": {
+      "name": "slot64",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "64": {
+      "name": "slot65",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "65": {
+      "name": "slot66",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "66": {
+      "name": "slot67",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "67": {
+      "name": "slot68",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "68": {
+      "name": "slot69",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "69": {
+      "name": "slot70",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "70": {
+      "name": "slot71",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "71": {
+      "name": "slot72",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "72": {
+      "name": "slot73",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "73": {
+      "name": "slot74",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "74": {
+      "name": "slot75",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "75": {
+      "name": "slot76",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "76": {
+      "name": "slot77",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "77": {
+      "name": "slot78",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "78": {
+      "name": "slot79",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "79": {
+      "name": "slot80",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "80": {
+      "name": "slot81",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "81": {
+      "name": "slot82",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "82": {
+      "name": "slot83",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "83": {
+      "name": "slot84",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "84": {
+      "name": "slot85",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "85": {
+      "name": "slot86",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "86": {
+      "name": "slot87",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "87": {
+      "name": "slot88",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "88": {
+      "name": "slot89",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "89": {
+      "name": "slot90",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "90": {
+      "name": "slot91",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "91": {
+      "name": "slot92",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "92": {
+      "name": "slot93",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "93": {
+      "name": "slot94",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "94": {
+      "name": "slot95",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "95": {
+      "name": "slot96",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "96": {
+      "name": "slot97",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "97": {
+      "name": "slot98",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "98": {
+      "name": "slot99",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "99": {
+      "name": "slot100",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
     "-1": {
       "name": "unit",
       "type": {
@@ -108,7 +738,7 @@
   },
   "handlers": [
     {
-      "code": "unit.setTimer(\"CheckStatus\",21)",
+      "code": "unit.setTimer(\"CheckStatus\",cycleTimeSeconds)",
       "filter": {
         "args": [
           {
@@ -121,7 +751,7 @@
       "key": "0"
     },
     {
-      "code": "unit.setTimer(\"CheckStatus\",21)",
+      "code": "unit.setTimer(\"CheckStatus\",cycleTimeSeconds)",
       "filter": {
         "args": [
           {
@@ -134,7 +764,7 @@
       "key": "1"
     },
     {
-      "code": "unit.setTimer(\"CheckStatus\",21)",
+      "code": "unit.setTimer(\"CheckStatus\",cycleTimeSeconds)",
       "filter": {
         "args": [
           {
@@ -169,7 +799,7 @@
       "key": "4"
     },
     {
-      "code": "--- ### unit.onstart(1) --- \ndesiredOreLoadInStock = 444 --export: Maintain how much of each?\ncycleTimeSeconds = 21 --export: Check connected industry how often?\nforceBottomStart = true --export: when first booting, force all machines to start with OreList.T1.aluminum\n\nversion = \"1.1.4\"\nrev_date = \"12Feb2024\"\n\nfunction switch_product(industryID)\n    local stopImmediate = false\n    local stopDestructive = false\n    industryID.stop(stopImmediate, stopDestructive)\n    local currentItem = industryID.getOutputs()\n  \n    -- linked list to cycle possible recipes\n    local cycleList = {}\n\n    cycleList[OreList.T1.oxygen]\t= OreList.T1.aluminum;\n    cycleList[OreList.T1.aluminum]\t= OreList.T1.carbon;\n    cycleList[OreList.T1.carbon] \t= OreList.T1.iron;\n    cycleList[OreList.T1.iron] \t    = OreList.T1.silicon;\n    cycleList[OreList.T1.silicon] \t= OreList.T1.hydrogen;\n    cycleList[OreList.T1.hydrogen] \t= OreList.T2.chromium;\n\t\t\t\t\t\t\t\t\n    cycleList[OreList.T2.chromium]\t= OreList.T2.calcium;\n    cycleList[OreList.T2.calcium]\t= OreList.T2.copper;\t\n    cycleList[OreList.T2.copper]\t= OreList.T2.sodium;\n    cycleList[OreList.T2.sodium]\t= OreList.Default;\t\n\n    if currentItem == nil then\n        currentItem = {}\n        currentItem[1] = {}\n        end\n    \n    if not cycleList[currentItem[1].id] then\n        -- if the refiner was doing a batch of something else, fall back to T1\n        currentItem[1].id = OreList.Default\n        end\n\n    if forceBottomStart then\n        forceBottomStart = false\n        currentItem[1].id = OreList.Default\n        end    \n    \n    -- handle the refiner\n    industryID.setOutput(cycleList[currentItem[1].id])\n    industryID.startMaintain(desiredOreLoadInStock) \n\n    end\n\n\n--- ### main code\n\nIndustryList = {}\nfor i = 1, 9, 1 do\n  if SlotList[i] and SlotList[i].getState() ~= nil then\n    table.insert(IndustryList, SlotList[i])\n    SlotList[i].stop(true)\n  end\nend\n\nunit.setTimer(\"CheckStatus\", 1)\t\n--- EOF unit.onstart(1) --- ",
+      "code": "--- ### unit.onstart(1) --- \ndesiredOreLoadInStock = 222 --export: Maintain how much of each?\ncycleTimeSeconds = 6 --export: Check connected industry how often?\nforceBottomStart = true --export: when first booting, force all machines to start with OreList.T1.aluminum\n\nversion = \"1.1.5\"\nrev_date = \"10Aug2025\"\n\nfunction switch_product(industryID)\n    local stopImmediate = false\n    local stopDestructive = false\n    industryID.stop(stopImmediate, stopDestructive)\n    local currentItem = industryID.getOutputs()\n  \n    -- linked list to cycle possible recipes\n    local cycleList = {}\n\n    cycleList[OreList.T1.aluminum]\t= OreList.T1.carbon;\n    cycleList[OreList.T1.carbon] \t= OreList.T1.iron;\n    cycleList[OreList.T1.iron] \t    = OreList.T1.silicon;\n    cycleList[OreList.T1.silicon] \t= OreList.T2.chromium; \n\t\t\t\t\t\t\t\t\n    cycleList[OreList.T2.chromium]\t= OreList.T2.calcium;\n    cycleList[OreList.T2.calcium]\t= OreList.T2.copper;\t\n    cycleList[OreList.T2.copper]\t= OreList.T2.sodium;\n    cycleList[OreList.T2.sodium]\t= OreList.Default;\t\n\n    if currentItem == nil then\n        currentItem = {}\n        currentItem[1] = {}\n        end\n    \n    if not cycleList[currentItem[1].id] then\n        -- if the refiner was doing a batch of something else, fall back to T1\n        currentItem[1].id = OreList.Default\n        end\n\n    if forceBottomStart then\n        forceBottomStart = false\n        currentItem[1].id = OreList.Default\n        end    \n    \n    -- handle the refiner\n    industryID.setOutput(cycleList[currentItem[1].id])\n    industryID.startMaintain(desiredOreLoadInStock) \n\n    end\n\n\n--- ### main code\n\nIndustryList = {}\nfor i = 1, 9, 1 do\n  if SlotList[i] and SlotList[i].getState() ~= nil then\n    table.insert(IndustryList, SlotList[i])\n    SlotList[i].stop(true)\n  end\nend\n\nunit.setTimer(\"CheckStatus\", 1)\t\n--- EOF unit.onstart(1) --- ",
       "filter": {
         "args": [],
         "signature": "onStart()",
@@ -178,7 +808,7 @@
       "key": "5"
     },
     {
-      "code": "--- ### library.onstart(1) --- \n\nSlotList = {slot1, slot2, slot3, slot4, slot5, slot6, slot7, slot8, slot9, slot10}\n\nOreList = {}\nOreList.T1 = {}\nOreList.T1.hydrogen  =  1010524904\nOreList.T1.oxygen    =  947806142\nOreList.T1.iron \t=  198782496\nOreList.T1.aluminum  =  2240749601\nOreList.T1.carbon \t=  159858782\nOreList.T1.silicon \t=  2589986891\n\n\nOreList.T2 = {}\nOreList.T2.chromium =  2147954574\nOreList.T2.copper\t=  1466453887\nOreList.T2.sodium \t=  3603734543\nOreList.T2.calcium \t=  2112763718\n\nOreList.Default = OreList.T1.oxygen\n\nIndustryStatus = {}\nIndustryStatus.jammed\t= 3\nIndustryStatus.pending\t= 6\n--- EOF library.onstart(1) --- ",
+      "code": "--- ### library.onstart(1) --- \n\nSlotList = {slot1, slot2, slot3, slot4, slot5, slot6, slot7, slot8, slot9, slot10}\n\nOreList = {}\nOreList.T1 = {}\nOreList.T1.aluminum  =  2240749601\nOreList.T1.carbon \t=  159858782\nOreList.T1.iron \t=  198782496\nOreList.T1.silicon \t=  2589986891\n\nOreList.T2 = {}\nOreList.T2.chromium =  2147954574\nOreList.T2.copper\t=  1466453887\nOreList.T2.sodium \t=  3603734543\nOreList.T2.calcium \t=  2112763718\n\nOreList.Default = OreList.T1.aluminum\n\nProductList = {}\nProductList.T1 = {}\nProductList.T1.silumin = 2565702107\n\n\nIndustryStatus = {}\nIndustryStatus.jammed\t= 3\nIndustryStatus.pending\t= 6\n--- EOF library.onstart(1) --- ",
       "filter": {
         "args": [],
         "signature": "onStart()",
