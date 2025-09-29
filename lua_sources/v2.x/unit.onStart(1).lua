@@ -15,7 +15,7 @@ t3_products = false --export: Do we handle T3 processed materials (Products)?
 
 forceBottomStart = true --export: Always start at the beginning when turned on.
                                     
-version = "2.0.0"
+version = "2.0.1"
 rev_date = "29sep2025"
 
 function switch_product(industryID)
@@ -131,12 +131,7 @@ function switch_product(industryID)
         fallback = Materials.t3.products.allialloy 
         end       
  	  end
-
-    if forceBottomStart then
-        forceBottomStart = false
-        currentItemID = fallback
-        end    
-
+ 
     local idToSet = 0
     --local loop = 0
     for loop , element in ipairs(cycleList) do
@@ -149,7 +144,12 @@ function switch_product(industryID)
     if idToSet == 0 or idToSet == nil then
       idToSet = fallback
     end
-    
+ 
+   if forceBottomStart then
+        forceBottomStart = false
+        idToSet = fallback
+        end   
+        
     -- handle the refiner
     
     system.print(" idToSet:" .. idToSet) 
