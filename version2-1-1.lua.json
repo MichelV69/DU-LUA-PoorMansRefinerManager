@@ -1,0 +1,774 @@
+{
+  "slots": {
+    "0": {
+      "name": "slot1",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "1": {
+      "name": "slot2",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "2": {
+      "name": "slot3",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "3": {
+      "name": "slot4",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "4": {
+      "name": "slot5",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "5": {
+      "name": "slot6",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "6": {
+      "name": "slot7",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "7": {
+      "name": "slot8",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "8": {
+      "name": "slot9",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "9": {
+      "name": "slot10",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "10": {
+      "name": "slot11",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "11": {
+      "name": "slot12",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "12": {
+      "name": "slot13",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "13": {
+      "name": "slot14",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "14": {
+      "name": "slot15",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "15": {
+      "name": "slot16",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "16": {
+      "name": "slot17",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "17": {
+      "name": "slot18",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "18": {
+      "name": "slot19",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "19": {
+      "name": "slot20",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "20": {
+      "name": "slot21",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "21": {
+      "name": "slot22",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "22": {
+      "name": "slot23",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "23": {
+      "name": "slot24",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "24": {
+      "name": "slot25",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "25": {
+      "name": "slot26",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "26": {
+      "name": "slot27",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "27": {
+      "name": "slot28",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "28": {
+      "name": "slot29",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "29": {
+      "name": "slot30",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "30": {
+      "name": "slot31",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "31": {
+      "name": "slot32",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "32": {
+      "name": "slot33",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "33": {
+      "name": "slot34",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "34": {
+      "name": "slot35",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "35": {
+      "name": "slot36",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "36": {
+      "name": "slot37",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "37": {
+      "name": "slot38",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "38": {
+      "name": "slot39",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "39": {
+      "name": "slot40",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "40": {
+      "name": "slot41",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "41": {
+      "name": "slot42",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "42": {
+      "name": "slot43",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "43": {
+      "name": "slot44",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "44": {
+      "name": "slot45",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "45": {
+      "name": "slot46",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "46": {
+      "name": "slot47",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "47": {
+      "name": "slot48",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "48": {
+      "name": "slot49",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "49": {
+      "name": "slot50",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "50": {
+      "name": "slot51",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "51": {
+      "name": "slot52",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "52": {
+      "name": "slot53",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "53": {
+      "name": "slot54",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "54": {
+      "name": "slot55",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "55": {
+      "name": "slot56",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "56": {
+      "name": "slot57",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "57": {
+      "name": "slot58",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "58": {
+      "name": "slot59",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "59": {
+      "name": "slot60",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "60": {
+      "name": "slot61",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "61": {
+      "name": "slot62",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "62": {
+      "name": "slot63",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "63": {
+      "name": "slot64",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "64": {
+      "name": "slot65",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "65": {
+      "name": "slot66",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "66": {
+      "name": "slot67",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "67": {
+      "name": "slot68",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "68": {
+      "name": "slot69",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "69": {
+      "name": "slot70",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "70": {
+      "name": "slot71",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "71": {
+      "name": "slot72",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "72": {
+      "name": "slot73",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "73": {
+      "name": "slot74",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "74": {
+      "name": "slot75",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "75": {
+      "name": "slot76",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "76": {
+      "name": "slot77",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "77": {
+      "name": "slot78",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "78": {
+      "name": "slot79",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "79": {
+      "name": "slot80",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "80": {
+      "name": "slot81",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "81": {
+      "name": "slot82",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "82": {
+      "name": "slot83",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "83": {
+      "name": "slot84",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "84": {
+      "name": "slot85",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "85": {
+      "name": "slot86",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "86": {
+      "name": "slot87",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "87": {
+      "name": "slot88",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "88": {
+      "name": "slot89",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "89": {
+      "name": "slot90",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "90": {
+      "name": "slot91",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "91": {
+      "name": "slot92",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "92": {
+      "name": "slot93",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "93": {
+      "name": "slot94",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "94": {
+      "name": "slot95",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "95": {
+      "name": "slot96",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "96": {
+      "name": "slot97",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "97": {
+      "name": "slot98",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "98": {
+      "name": "slot99",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "99": {
+      "name": "slot100",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "-1": {
+      "name": "unit",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "-3": {
+      "name": "player",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "-2": {
+      "name": "construct",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "-4": {
+      "name": "system",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    },
+    "-5": {
+      "name": "library",
+      "type": {
+        "events": [],
+        "methods": []
+      }
+    }
+  },
+  "handlers": [
+    {
+      "code": "--- ### unit.onstart(1) --- \ndesiredOreLoadInStock = 4800 --export: Maintain how much of each?\ncycleTimeSeconds = 7 --export: Check connected industry how often?\nt1_ore = false --export: Do we handle T1 raw ore?\nt2_ore = false --export: Do we handle T2 raw ore?\nt3_ore = false --export: Do we handle T3 raw ore?\n\nt1_pure = true --export: Do we handle T1 refined ores (Pures)?\nt2_pure = true --export: Do we handle T2 refined ores (Pures)?\nt3_pure = false --export: Do we handle T3 refined ores (Pures)?\n\nt1_products = false --export: Do we handle T1 processed materials (Products)?\nt2_products = false --export: Do we handle T2 processed materials (Products)?\nt3_products = false --export: Do we handle T3 processed materials (Products)?\n\nforceBottomStart = true --export: Always start at the beginning when turned on.\n                                    \nversion = \"2.0.0\"\nrev_date = \"29sep2025\"\n\nfunction switch_product(industryID)\n\n    local currentState = industryID.getState()\n    if currentState == IndustryStatus.storagefull\tor \n       currentState == IndustryStatus.badconfig   or\n       currentState == IndustryStatus.running\n    then\n      system.print(\" skipping\"..industryID.getLocalId()..\":\"..currentState) \n      return\n      end\n                        \n    local currentItemID = industryID.getOutputs()[1].id\n    local stopImmediate = false\n    local stopDestructive = false\n    industryID.stop(stopImmediate, stopDestructive)\n\n    system.print(\" --------- \")\n    system.print(\"industryID:\"..industryID.getLocalId())\n    system.print(\"currentState:\"..currentState)\n    system.print(\"currentItemID:\"..currentItemID)\n    system.print(\" \")\n  \n    -- linked list to cycle possible recipes\n    local cycleList = {}\n    local fallback = \"\"\n\n    if t1_ore then \n      cycleList[#cycleList + 1] = Materials.t1.ores.bauxite \n      cycleList[#cycleList + 1] = Materials.t1.ores.coal \t  \n      cycleList[#cycleList + 1] = Materials.t1.ores.hematite      \n      cycleList[#cycleList + 1] = Materials.t1.ores.quartz\n      if fallback == \"\" then\n        fallback = Materials.t1.ores.bauxite\n        end\n      \n \t  end\n\n    if t2_ore then \n      cycleList[#cycleList + 1] = Materials.t2.ores.chromite \n      cycleList[#cycleList + 1] = Materials.t2.ores.natron\t \n      cycleList[#cycleList + 1] = Materials.t2.ores.malachite      \n      cycleList[#cycleList + 1] = Materials.t2.ores.limestone\n      if fallback == \"\" then\n        fallback = Materials.t2.ores.chromite\n        end\n \t  end\n\n    if t3_ore then \n      cycleList[#cycleList + 1] = Materials.t3.ores.pyrite     \n      cycleList[#cycleList + 1] = Materials.t3.ores.acanthite  \n      cycleList[#cycleList + 1] = Materials.t3.ores.garnierite       \n      cycleList[#cycleList + 1] = Materials.t3.ores.petalite   \n      if fallback == \"\" then\n        fallback = Materials.t3.ores.pyrite \n        end\n \t  end\n\n    if t1_pure then \n      cycleList[#cycleList + 1] = Materials.t1.pures.aluminium\n      cycleList[#cycleList + 1] = Materials.t1.pures.carbon \t\n      cycleList[#cycleList + 1] = Materials.t1.pures.iron \t        \n      cycleList[#cycleList + 1] = Materials.t1.pures.silicon\n      if fallback == \"\" then\n        fallback =  Materials.t1.pures.aluminium \n        end\n     end\n\n    if t2_pure then \n      cycleList[#cycleList + 1] = Materials.t2.pures.chromium\n      cycleList[#cycleList + 1] = Materials.t2.pures.copper\t \n      cycleList[#cycleList + 1] = Materials.t2.pures.sodium       \n      cycleList[#cycleList + 1] = Materials.t2.pures.calcium \n      if fallback == \"\" then\n        fallback = Materials.t2.pures.chromium \n        end            \n \t  end\n\n    if t3_pure then \n      cycleList[#cycleList + 1] = Materials.t3.pures.lithium\n      cycleList[#cycleList + 1] = Materials.t3.pures.nickel\t\n      cycleList[#cycleList + 1] = Materials.t3.pures.sulfur      \n      cycleList[#cycleList + 1] = Materials.t3.pures.silver \n      if fallback == \"\" then\n        fallback = Materials.t3.pures.lithium \n        end                  \n \t  end\n\n    if t1_products then \n      cycleList[#cycleList + 1] = Materials.t1.products.alfealloy\n      cycleList[#cycleList + 1] = Materials.t1.products.silumin  \n      cycleList[#cycleList + 1] = Materials.t1.products.steel          \n      if fallback == \"\" then\n        fallback = Materials.t1.products.alfealloy \n        end                  \n \t  end\n\n    if t2_products then \n      cycleList[#cycleList + 1] = Materials.t2.products.calciumreinforcedcopper\n      cycleList[#cycleList + 1] = Materials.t2.products.stainlesssteel         \n      cycleList[#cycleList + 1] = Materials.t2.products.duralumin \n      if fallback == \"\" then\n        fallback = Materials.t2.products.calciumreinforcedcopper \n        end                        \n \t  end\n\n    if t3_products then \n      cycleList[#cycleList + 1] = Materials.t3.products.allialloy\n      cycleList[#cycleList + 1] = Materials.t3.products.cuagalloy\n      cycleList[#cycleList + 1] = Materials.t3.products.inconel    \n      if fallback == \"\" then\n        fallback = Materials.t3.products.allialloy \n        end       \n \t  end\n\n    if forceBottomStart then\n        forceBottomStart = false\n        currentItemID = fallback\n        end    \n\n    local idToSet = 0\n    --local loop = 0\n    for loop , element in ipairs(cycleList) do\n      -- loop = loop +1\n      if element == currentItemID then\n        idToSet = cycleList[loop+1] \n        end\n      end\n\n    if idToSet == 0 or idToSet == nil then\n      idToSet = fallback\n    end\n    \n    -- handle the refiner\n    \n    system.print(\" idToSet:\" .. idToSet) \n    industryID.setOutput(idToSet)\n    industryID.startMaintain(desiredOreLoadInStock) \n\n    end\n\n\n--- ### main code\n\nIndustryList = {}\nfor i = 1, 9, 1 do\n  if SlotList[i] and SlotList[i].getState() ~= nil then\n    table.insert(IndustryList, SlotList[i])\n    SlotList[i].stop(true)\n  end\nend\n\nunit.setTimer(\"CheckStatus\", 1)\t\n--- EOF unit.onstart(1) --- \n\n",
+      "filter": {
+        "args": [],
+        "signature": "onStart()",
+        "slotKey": "-1"
+      },
+      "key": "0"
+    },
+    {
+      "code": "unit.stopTimer(\"CheckStatus\")\n\nfor IndustryIndex = 1,#IndustryList do \n    switch_product(IndustryList[IndustryIndex])\n    end\n\nunit.setTimer(\"CheckStatus\", cycleTimeSeconds)\n--- ### unit.OnTimer(1) EOF ### --- ",
+      "filter": {
+        "args": [
+          {
+            "value": "CheckStatus"
+          }
+        ],
+        "signature": "onTimer(tag)",
+        "slotKey": "-1"
+      },
+      "key": "1"
+    },
+    {
+      "code": "--- ### library.onstart(1) --- \n\nSlotList = {slot1, slot2, slot3, slot4, slot5, slot6, slot7, slot8, slot9, slot10}\n\nMaterials = {}\nMaterials.t1 = {}\nMaterials.t2 = {}\nMaterials.t3 = {}\n\nMaterials.t1.ores = {}\nMaterials.t1.pures = {}\nMaterials.t1.products = {}\n\nMaterials.t2.ores = {}\nMaterials.t2.pures = {}\nMaterials.t2.products = {}\n\nMaterials.t3.ores = {}\nMaterials.t3.pures = {}\nMaterials.t3.products = {}\n\nMaterials.t1.ores.bauxite   = 262147665\nMaterials.t1.ores.coal \t    = 299255727\nMaterials.t1.ores.hematite \t= 4234772167\nMaterials.t1.ores.quartz \t  = 2589986891\n\nMaterials.t2.ores.chromite   = 2029139010\nMaterials.t2.ores.natron\t   = 343766315\nMaterials.t2.ores.malachite  = 2289641763\nMaterials.t2.ores.limestone  = 3086347393\n\nMaterials.t3.ores.pyrite     = 4041459743 \nMaterials.t3.ores.acanthite  = 1050500112 \nMaterials.t3.ores.garnierite = 1065079614 \nMaterials.t3.ores.petalite   = 3837858336 \n\nMaterials.t1.pures.aluminium = 2240749601 \nMaterials.t1.pures.carbon \t= 159858782 \nMaterials.t1.pures.iron \t  = 198782496 \nMaterials.t1.pures.silicon \t= 2589986891 \n\nMaterials.t2.pures.chromium = 2147954574 \nMaterials.t2.pures.copper\t  = 1466453887 \nMaterials.t2.pures.sodium \t= 3603734543 \nMaterials.t2.pures.calcium \t= 2112763718 \n\nMaterials.t3.pures.lithium  = 3810111622 \nMaterials.t3.pures.nickel\t  = 3012303017 \nMaterials.t3.pures.sulfur \t= 3822811562 \nMaterials.t3.pures.silver \t= 1807690770 \n\nMaterials.t1.products.alfealloy = 18262914\nMaterials.t1.products.silumin   = 2565702107\nMaterials.t1.products.steel     = 511774178\n\nMaterials.t2.products.calciumreinforcedcopper = 1034957327\nMaterials.t2.products.stainlesssteel          = 2984358477\nMaterials.t2.products.duralumin               = 231758472\n\nMaterials.t3.products.allialloy =  2021406770\nMaterials.t3.products.cuagalloy =  1673011820\nMaterials.t3.products.inconel   =  167908167\n\n--- # key codes from industry # ---\nIndustryStatus = {}\nIndustryStatus.stopped\t= 1\nIndustryStatus.running\t= 2\nIndustryStatus.jammed\t  = 3\nIndustryStatus.storagefull = 4\nIndustryStatus.badconfig   = 5\nIndustryStatus.pending     = 6\n\n--- EOF library.onstart(1) --- \n",
+      "filter": {
+        "args": [],
+        "signature": "onStart()",
+        "slotKey": "-5"
+      },
+      "key": "2"
+    }
+  ],
+  "methods": [],
+  "events": []
+}

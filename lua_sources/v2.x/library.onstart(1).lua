@@ -1,0 +1,73 @@
+--- ### library.onstart(1) --- 
+
+SlotList = {slot1, slot2, slot3, slot4, slot5, slot6, slot7, slot8, slot9, slot10}
+
+Materials = {}
+Materials.t1 = {}
+Materials.t2 = {}
+Materials.t3 = {}
+
+Materials.t1.ores = {}
+Materials.t1.pures = {}
+Materials.t1.products = {}
+
+Materials.t2.ores = {}
+Materials.t2.pures = {}
+Materials.t2.products = {}
+
+Materials.t3.ores = {}
+Materials.t3.pures = {}
+Materials.t3.products = {}
+
+Materials.t1.ores.bauxite   = 262147665
+Materials.t1.ores.coal 	    = 299255727
+Materials.t1.ores.hematite 	= 4234772167
+Materials.t1.ores.quartz 	  = 2589986891
+
+Materials.t2.ores.chromite   = 2029139010
+Materials.t2.ores.natron	   = 343766315
+Materials.t2.ores.malachite  = 2289641763
+Materials.t2.ores.limestone  = 3086347393
+
+Materials.t3.ores.pyrite     = 4041459743 
+Materials.t3.ores.acanthite  = 1050500112 
+Materials.t3.ores.garnierite = 1065079614 
+Materials.t3.ores.petalite   = 3837858336 
+
+Materials.t1.pures.aluminium = 2240749601 
+Materials.t1.pures.carbon 	= 159858782 
+Materials.t1.pures.iron 	  = 198782496 
+Materials.t1.pures.silicon 	= 2589986891 
+
+Materials.t2.pures.chromium = 2147954574 
+Materials.t2.pures.copper	  = 1466453887 
+Materials.t2.pures.sodium 	= 3603734543 
+Materials.t2.pures.calcium 	= 2112763718 
+
+Materials.t3.pures.lithium  = 3810111622 
+Materials.t3.pures.nickel	  = 3012303017 
+Materials.t3.pures.sulfur 	= 3822811562 
+Materials.t3.pures.silver 	= 1807690770 
+
+Materials.t1.products.alfealloy = 18262914
+Materials.t1.products.silumin   = 2565702107
+Materials.t1.products.steel     = 511774178
+
+Materials.t2.products.calciumreinforcedcopper = 1034957327
+Materials.t2.products.stainlesssteel          = 2984358477
+Materials.t2.products.duralumin               = 231758472
+
+Materials.t3.products.allialloy =  2021406770
+Materials.t3.products.cuagalloy =  1673011820
+Materials.t3.products.inconel   =  167908167
+
+--- # key codes from industry # ---
+IndustryStatus = {}
+IndustryStatus.stopped	= 1
+IndustryStatus.running	= 2
+IndustryStatus.jammed	  = 3
+IndustryStatus.storagefull = 4
+IndustryStatus.badconfig   = 5
+IndustryStatus.pending     = 6
+
+--- EOF library.onstart(1) --- 
