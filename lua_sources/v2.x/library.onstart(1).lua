@@ -6,6 +6,7 @@ Materials = {}
 Materials.t1 = {}
 Materials.t2 = {}
 Materials.t3 = {}
+Materials.t4 = {}
 
 Materials.t1.ores = {}
 Materials.t1.pures = {}
@@ -18,6 +19,10 @@ Materials.t2.products = {}
 Materials.t3.ores = {}
 Materials.t3.pures = {}
 Materials.t3.products = {}
+
+Materials.t4.ores = {}
+Materials.t4.pures = {}
+Materials.t4.products = {}
 
 --- //
 Materials.t1.ores.bauxite   = 262147665

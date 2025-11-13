@@ -4,19 +4,22 @@ cycleTimeSeconds = 7 --export: Check connected industry how often?
 t1_ore = false --export: Do we handle T1 raw ore?
 t2_ore = false --export: Do we handle T2 raw ore?
 t3_ore = false --export: Do we handle T3 raw ore?
+t4_ore = false --export: Do we handle T4 raw ore?
 
 t1_pure = true --export: Do we handle T1 refined ores (Pures)?
 t2_pure = true --export: Do we handle T2 refined ores (Pures)?
-t3_pure = false --export: Do we handle T3 refined ores (Pures)?
+t3_pure = true --export: Do we handle T3 refined ores (Pures)?
+t4_pure = true --export: Do we handle T4 refined ores (Pures)?
 
 t1_products = false --export: Do we handle T1 processed materials (Products)?
 t2_products = false --export: Do we handle T2 processed materials (Products)?
 t3_products = false --export: Do we handle T3 processed materials (Products)?
+t4_products = false --export: Do we handle T3 processed materials (Products)?
 
 forceBottomStart = true --export: Always start at the beginning when turned on.
 
-version = "2.0.1"
-rev_date = "29sep2025"
+version = "2.1.0"
+rev_date = "13nov2025"
 
 function switch_product(industryID)
 
