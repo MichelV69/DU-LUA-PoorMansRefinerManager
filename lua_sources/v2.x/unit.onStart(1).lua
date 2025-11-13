@@ -1,4 +1,4 @@
---- ### unit.onstart(1) --- 
+--- ### unit.onstart(1) ---
 desiredOreLoadInStock = 4800 --export: Maintain how much of each?
 cycleTimeSeconds = 7 --export: Check connected industry how often?
 t1_ore = false --export: Do we handle T1 raw ore?
@@ -14,21 +14,21 @@ t2_products = false --export: Do we handle T2 processed materials (Products)?
 t3_products = false --export: Do we handle T3 processed materials (Products)?
 
 forceBottomStart = true --export: Always start at the beginning when turned on.
-                                    
+
 version = "2.0.1"
 rev_date = "29sep2025"
 
 function switch_product(industryID)
 
     local currentState = industryID.getState()
-    if currentState == IndustryStatus.storagefull	or 
+    if currentState == IndustryStatus.storagefull	or
        currentState == IndustryStatus.badconfig   or
        currentState == IndustryStatus.running
     then
-      system.print(" skipping"..industryID.getLocalId()..":"..currentState) 
+      system.print(" skipping"..industryID.getLocalId()..":"..currentState)
       return
       end
-                        
+
     local currentItemID = industryID.getOutputs()[1].id
     local stopImmediate = false
     local stopDestructive = false
@@ -39,122 +39,150 @@ function switch_product(industryID)
     system.print("currentState:"..currentState)
     system.print("currentItemID:"..currentItemID)
     system.print(" ")
-  
+
     -- linked list to cycle possible recipes
     local cycleList = {}
     local fallback = ""
 
-    if t1_ore then 
-      cycleList[#cycleList + 1] = Materials.t1.ores.bauxite 
-      cycleList[#cycleList + 1] = Materials.t1.ores.coal 	  
-      cycleList[#cycleList + 1] = Materials.t1.ores.hematite      
+    if t1_ore then
+      cycleList[#cycleList + 1] = Materials.t1.ores.bauxite
+      cycleList[#cycleList + 1] = Materials.t1.ores.coal
+      cycleList[#cycleList + 1] = Materials.t1.ores.hematite
       cycleList[#cycleList + 1] = Materials.t1.ores.quartz
       if fallback == "" then
         fallback = Materials.t1.ores.bauxite
         end
-      
  	  end
 
-    if t2_ore then 
-      cycleList[#cycleList + 1] = Materials.t2.ores.chromite 
-      cycleList[#cycleList + 1] = Materials.t2.ores.natron	 
-      cycleList[#cycleList + 1] = Materials.t2.ores.malachite      
+    if t2_ore then
+      cycleList[#cycleList + 1] = Materials.t2.ores.chromite
+      cycleList[#cycleList + 1] = Materials.t2.ores.natron
+      cycleList[#cycleList + 1] = Materials.t2.ores.malachite
       cycleList[#cycleList + 1] = Materials.t2.ores.limestone
       if fallback == "" then
         fallback = Materials.t2.ores.chromite
         end
  	  end
 
-    if t3_ore then 
-      cycleList[#cycleList + 1] = Materials.t3.ores.pyrite     
-      cycleList[#cycleList + 1] = Materials.t3.ores.acanthite  
-      cycleList[#cycleList + 1] = Materials.t3.ores.garnierite       
-      cycleList[#cycleList + 1] = Materials.t3.ores.petalite   
+    if t3_ore then
+      cycleList[#cycleList + 1] = Materials.t3.ores.pyrite
+      cycleList[#cycleList + 1] = Materials.t3.ores.acanthite
+      cycleList[#cycleList + 1] = Materials.t3.ores.garnierite
+      cycleList[#cycleList + 1] = Materials.t3.ores.petalite
       if fallback == "" then
-        fallback = Materials.t3.ores.pyrite 
+        fallback = Materials.t3.ores.pyrite
         end
  	  end
 
-    if t1_pure then 
+    if t4_ore then
+      cycleList[#cycleList + 1] = Materials.t4.ores.cobaltite
+      cycleList[#cycleList + 1] = Materials.t4.ores.cryolite
+      cycleList[#cycleList + 1] = Materials.t4.ores.gold_nuggets
+      cycleList[#cycleList + 1] = Materials.t4.ores.kolbeckite
+      if fallback == "" then
+        fallback = Materials.t4.ores.cobaltite
+      end
+    end
+
+    if t1_pure then
       cycleList[#cycleList + 1] = Materials.t1.pures.aluminium
-      cycleList[#cycleList + 1] = Materials.t1.pures.carbon 	
-      cycleList[#cycleList + 1] = Materials.t1.pures.iron 	        
+      cycleList[#cycleList + 1] = Materials.t1.pures.carbon
+      cycleList[#cycleList + 1] = Materials.t1.pures.iron
       cycleList[#cycleList + 1] = Materials.t1.pures.silicon
       if fallback == "" then
-        fallback =  Materials.t1.pures.aluminium 
+        fallback =  Materials.t1.pures.aluminium
         end
      end
 
-    if t2_pure then 
+    if t2_pure then
       cycleList[#cycleList + 1] = Materials.t2.pures.chromium
-      cycleList[#cycleList + 1] = Materials.t2.pures.copper	 
-      cycleList[#cycleList + 1] = Materials.t2.pures.sodium       
-      cycleList[#cycleList + 1] = Materials.t2.pures.calcium 
+      cycleList[#cycleList + 1] = Materials.t2.pures.copper
+      cycleList[#cycleList + 1] = Materials.t2.pures.sodium
+      cycleList[#cycleList + 1] = Materials.t2.pures.calcium
       if fallback == "" then
-        fallback = Materials.t2.pures.chromium 
-        end            
+        fallback = Materials.t2.pures.chromium
+        end
  	  end
 
-    if t3_pure then 
+    if t3_pure then
       cycleList[#cycleList + 1] = Materials.t3.pures.lithium
-      cycleList[#cycleList + 1] = Materials.t3.pures.nickel	
-      cycleList[#cycleList + 1] = Materials.t3.pures.sulfur      
-      cycleList[#cycleList + 1] = Materials.t3.pures.silver 
+      cycleList[#cycleList + 1] = Materials.t3.pures.nickel
+      cycleList[#cycleList + 1] = Materials.t3.pures.sulfur
+      cycleList[#cycleList + 1] = Materials.t3.pures.silver
       if fallback == "" then
-        fallback = Materials.t3.pures.lithium 
-        end                  
+        fallback = Materials.t3.pures.lithium
+        end
  	  end
 
-    if t1_products then 
+    if t4_pure then
+      cycleList[#cycleList + 1] = Materials.t4.pures.cobalt
+      cycleList[#cycleList + 1] = Materials.t4.pures.fluorine
+      cycleList[#cycleList + 1] = Materials.t4.pures.gold
+      cycleList[#cycleList + 1] = Materials.t4.pures.scandium
+      if fallback == "" then
+        fallback = Materials.t4.pures.cobalt
+        end
+ 	  end
+
+    if t1_products then
       cycleList[#cycleList + 1] = Materials.t1.products.alfealloy
-      cycleList[#cycleList + 1] = Materials.t1.products.silumin  
-      cycleList[#cycleList + 1] = Materials.t1.products.steel          
+      cycleList[#cycleList + 1] = Materials.t1.products.silumin
+      cycleList[#cycleList + 1] = Materials.t1.products.steel
       if fallback == "" then
-        fallback = Materials.t1.products.alfealloy 
-        end                  
+        fallback = Materials.t1.products.alfealloy
+        end
  	  end
 
-    if t2_products then 
+    if t2_products then
       cycleList[#cycleList + 1] = Materials.t2.products.calciumreinforcedcopper
-      cycleList[#cycleList + 1] = Materials.t2.products.stainlesssteel         
-      cycleList[#cycleList + 1] = Materials.t2.products.duralumin 
+      cycleList[#cycleList + 1] = Materials.t2.products.stainlesssteel
+      cycleList[#cycleList + 1] = Materials.t2.products.duralumin
       if fallback == "" then
-        fallback = Materials.t2.products.calciumreinforcedcopper 
-        end                        
+        fallback = Materials.t2.products.calciumreinforcedcopper
+        end
  	  end
 
-    if t3_products then 
+    if t3_products then
       cycleList[#cycleList + 1] = Materials.t3.products.allialloy
       cycleList[#cycleList + 1] = Materials.t3.products.cuagalloy
-      cycleList[#cycleList + 1] = Materials.t3.products.inconel    
+      cycleList[#cycleList + 1] = Materials.t3.products.inconel
       if fallback == "" then
-        fallback = Materials.t3.products.allialloy 
-        end       
+        fallback = Materials.t3.products.allialloy
+        end
  	  end
- 
+
+    if t4_products then
+      cycleList[#cycleList + 1] = Materials.t4.products.maraging_steel
+      cycleList[#cycleList + 1] = Materials.t4.products.red_gold
+      cycleList[#cycleList + 1] = Materials.t4.products.sc_al_alloy
+      if fallback == "" then
+        fallback = Materials.t4.products.maraging_steel
+        end
+ 	  end
+
     local idToSet = 0
     --local loop = 0
     for loop , element in ipairs(cycleList) do
       -- loop = loop +1
       if element == currentItemID then
-        idToSet = cycleList[loop+1] 
+        idToSet = cycleList[loop+1]
         end
       end
 
     if idToSet == 0 or idToSet == nil then
       idToSet = fallback
     end
- 
+
    if forceBottomStart then
         forceBottomStart = false
         idToSet = fallback
-        end   
-        
+        end
+
     -- handle the refiner
-    
-    system.print(" idToSet:" .. idToSet) 
+
+    system.print(" idToSet:" .. idToSet)
     industryID.setOutput(idToSet)
-    industryID.startMaintain(desiredOreLoadInStock) 
+    industryID.startMaintain(desiredOreLoadInStock)
 
     end
 
@@ -169,7 +197,5 @@ for i = 1, 9, 1 do
   end
 end
 
-unit.setTimer("CheckStatus", 1)	
---- EOF unit.onstart(1) --- 
-
-
+unit.setTimer("CheckStatus", 1)
+--- EOF unit.onstart(1) ---
